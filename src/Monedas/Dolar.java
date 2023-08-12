@@ -1,14 +1,13 @@
 package Monedas;
+import Principal.Conversor;
 
-public class Dolar extends Moneda{
+
+public class Dolar extends Conversor{
 
 	public Dolar () {
 		tasaCambio = 0.059;
+		tasaPeso = 17.01;
 	}
 	
-	@Override
-	public double convertirA(double cantidad) {
-		return cantidad * tasaCambio;
-	}
 
 }

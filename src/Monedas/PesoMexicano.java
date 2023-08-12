@@ -1,14 +1,12 @@
 package Monedas;
 
-public class PesoMexicano extends Moneda{
+import Principal.Conversor;
+
+public class PesoMexicano extends Conversor{
 
 	public PesoMexicano () {
 		tasaCambio = 1;
 	}
 	
-	@Override
-	public double convertirA(double cantidad) {
-		return cantidad;
-	}
 	
 }
