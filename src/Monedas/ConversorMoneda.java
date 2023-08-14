@@ -2,6 +2,8 @@ package Monedas;
 
 import javax.swing.JOptionPane;
 
+import Principal.ValidaValor;
+
 
 
 public class ConversorMoneda {
@@ -13,9 +15,7 @@ public class ConversorMoneda {
 		
 		valorMoneda = JOptionPane.showInputDialog(null, "Introduzca la cantidad a convetir");
 		
-		while (!Principal.ValidaValor.tryParseDouble(valorMoneda)) {
-			valorMoneda = JOptionPane.showInputDialog(null,"Solo se aceptan números: ", "Valor numerico", JOptionPane.ERROR_MESSAGE);			
-		}
+		ValidaValor.validaSecuencia(valorMoneda);
 		
 		monedaConvertida = Double.valueOf(valorMoneda);
 		

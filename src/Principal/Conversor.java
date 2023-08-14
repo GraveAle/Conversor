@@ -12,7 +12,5 @@ public class Conversor {
 	public double convierteP (double cantidad) {
 		return cantidad * tasaPeso;
 	}
-	
-	
 
 }

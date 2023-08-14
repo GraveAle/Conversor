@@ -16,7 +16,7 @@ public class Main {
                 if (seleccionarConversion.equals("Conversor de moneda")) {
                     Monedas.ConversorMoneda.convierteMoneda();
                 } else if (seleccionarConversion.equals("Conversor de temperatura")) {
-                    System.out.println("Codigo para convertir temperatura");
+                    Temperatura.ConversorTemperatura.convierteTemperatura();
                 }
             } else {
                 break;
